@@ -25,10 +25,6 @@ def auth():
     labels = results.get('labels', [])
 
     if not labels:
-        print('No labels found.')
-    else:
-        print('Labels:')
-        for label in labels:
-            print(label['name'], label['id'])
+        print('Something went wronk with auth.')
 
     return service
