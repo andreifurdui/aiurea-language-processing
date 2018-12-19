@@ -2,6 +2,7 @@
 ### My Ignores
 Sources/token.json
 credentials.json
+DataDumps
 
 ### Python template
 # Byte-compiled / optimized / DLL files
@@ -109,3 +110,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+DataDumps/
