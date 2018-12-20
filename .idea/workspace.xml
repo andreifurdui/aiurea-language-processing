@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a6e8451-7da3-412e-8a80-a47ffed766ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/plots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/analyzer.py" afterDir="false" />
     </list>
     <ignored path="venv/" />
@@ -60,10 +62,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="193">
+              <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/plots.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,6 +110,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dict</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>d</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -106,6 +128,7 @@
         <option value="$PROJECT_DIR$/Sources/import.py" />
         <option value="$PROJECT_DIR$/Sources/importer.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Sources/plots.py" />
         <option value="$PROJECT_DIR$/Sources/analyzer.py" />
       </list>
     </option>
@@ -262,8 +285,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="R Graphics" order="3" weight="0.32954547" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.32954547" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -322,6 +345,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3.6/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="527" selection-start-line="527" selection-end-line="527" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/importer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2265">
@@ -332,17 +362,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/collections/__init__.py">
+    <entry file="file://$PROJECT_DIR$/Sources/plots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="527" selection-start-line="527" selection-end-line="527" />
+        <state relative-caret-position="165">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="193">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

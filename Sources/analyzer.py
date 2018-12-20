@@ -1,6 +1,7 @@
 import pickle
 from collections import Counter
 from importer import Mail
+import plots
 
 
 class Aiureapedia:
@@ -64,15 +65,19 @@ def build_dionary(data):
 
 def mail_count(d):
     count_stat = dict([(member.get_name(), member.message_count()) for member in d.members.values()])
-    count_stat = sorted(count_stat.items(), key=lambda kv: kv[1])
-    count_stat.reverse()
-
+    count_stat = sorted(count_stat.items(), key=lambda kv: kv[1], reverse = True)
+    plots.plot_mail_leaderboard(count_stat)
     print(count_stat)
+
+
+def number_of_words(d):
+    return ""
 
 
 def get_stats(d):
 
     mail_count(d)
+    #number_of_words(d)
 
 
 def main():
