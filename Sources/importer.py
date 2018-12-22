@@ -4,14 +4,11 @@ from pprint import pprint
 import base64
 import time
 import dateutil.parser as parser
-from datetime import datetime
-import datetime
-import email
 import re
 import pickle
 
 
-body_stop_regex = r'^((\b((On Mon|On Tue|On Wed|On Thu|On Fri|On Sat|On Sun))\b)|(\b((În lun|În mar|În mie|În joi|În vin|În sâm|În dum))\b)|(--))'
+body_stop_regex = r'^((\b((On Mon|On Tue|On Wed|On Thu|On Fri|On Sat|On Sun))\b)|(\b((În lun|În mar|În mie|În joi|În vin|În sâm|În dum))\b)|(--)|(\b(Vlad Helgiu)\b)|(\*______________________\*)|(Best regards,)|(\*+))'
 
 failed = []
 
@@ -160,8 +157,8 @@ def inspect():
 
 
 def main():
-    process()
-    #inspect()
+    #process()
+    inspect()
 
 
 if __name__ == "__main__":
