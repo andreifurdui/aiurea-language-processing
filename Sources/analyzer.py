@@ -3,7 +3,9 @@ from collections import Counter
 from importer import Mail
 import plots
 import numpy as np
+import datetime
 import pandas as pd
+from dateutil.tz import tzoffset
 from nltk.tokenize import TweetTokenizer
 
 
@@ -87,13 +89,17 @@ def delete_last_line(text):
 
 def build_dictionary(data):
     d = Aiureapedia()
-
     for message in data:
+        if message.date < datetime.datetime(2018, 12, 1, tzinfo=tzoffset("GMT", 2)):
+            continue
         name, address = get_author(message)
         if(address == r'ionel.covasan@gmail.com'):
             content = delete_last_line(message.content)
         else:
-            content = message.content
+            if (message.content.startswith("di ce 3 si nu")):
+                content = "di ce 3 si nu pi"
+            else:
+                content = message.content
         d.add_message_to_member(address, name, message.date, content)
 
     d.finalize()
@@ -115,6 +121,7 @@ def mail_count(d):
 
 
 def number_of_words(d):
+    print(sum([member.word_count() for member in d.members.values()]))
     words_stat = dict([(member.alias, member.word_count()) for member in d.members.values()])
     words_stat = sorted(words_stat.items(), key=lambda kv: kv[1], reverse= True)
     plots.plot_bar_chart(words_stat, "")

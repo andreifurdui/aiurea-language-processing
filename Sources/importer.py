@@ -20,7 +20,7 @@ class Mail:
 
 
 def get_threads(gmail):
-    thread_ids = gmail.users().threads().list(userId="me", labelIds=["Label_1"], maxResults=300).execute()
+    thread_ids = gmail.users().threads().list(userId="me", labelIds=["Label_1"], maxResults=420).execute()
     threads = []
 
     len_t = len(thread_ids['threads'])
@@ -118,12 +118,10 @@ def get_messages_from_threads(gmail, threads):
 
 def get_aiurea_emails(gmail):
 
-    #threads = get_threads(gmail)
-    #pickle.dump(threads, open("../DataDumps/threadsDump.p", "wb"))
+    threads = get_threads(gmail)
+    pickle.dump(threads, open("../DataDumps/threadsDump.p", "wb"))
 
-    threads = pickle.load(open("../DataDumps/threadsDump.p", "rb"))
-    #mail_object = parse_message(threads[18]['messages'][2])
-    #print(vars(mail_object))
+    #threads = pickle.load(open("../DataDumps/threadsDump.p", "rb"))
     mails = get_messages_from_threads(gmail, threads)
 
     return mails
